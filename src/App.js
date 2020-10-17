@@ -1,24 +1,22 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="columns">
+      <div class="column">
+        
+      </div>
+      <div class="column">
+        Second column
+      </div>
+      <div class="column">
+        
+      </div>
+    </div>
     </div>
   );
 }
