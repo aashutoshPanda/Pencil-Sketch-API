@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'image_processing.apps.Image_processingConfig',
+    'image_processing.apps.ImageProcessingConfig',
 
 ]
 
