@@ -1,22 +1,33 @@
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
-
-
-
+import React from "react";
+import UploadImage from "./components/UploadImage";
 function App() {
   return (
     <div className="App">
-      <div class="columns">
-      <div class="column">
-        
+      <section className="hero is-primary is-bold">
+        <div className="hero-body">
+          <div className="container">
+            <h1 className="title">Image to Sketch </h1>
+            <a
+              target="_blank"
+              href="https://github.com/aashutoshpanda"
+              className="give-padding fa fa-github"
+            >
+              Check out the Source Code
+            </a>
+          </div>
+        </div>
+      </section>
+      <div className="columns">
+        <div className="column" />
+
+        <div className="column">
+          <UploadImage />
+        </div>
+        <div className="column" />
       </div>
-      <div class="column">
-        Second column
-      </div>
-      <div class="column">
-        
-      </div>
-    </div>
     </div>
   );
 }

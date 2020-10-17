@@ -13,9 +13,6 @@ class index(APIView):
         JSONParser,
     )
 
-    def get(self, request):
-        return Response("GET image to sketch")
-
     def post(self, request, format=None):
         try:
             file = request.data.get('picture')

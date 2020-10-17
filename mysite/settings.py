@@ -41,12 +41,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
     'images.apps.ImagesConfig',
 
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -139,3 +141,4 @@ if 'DATABASE_URL' in os.environ:
 cloudinary.config(cloud_name=env('CLOUDINARY_CLOUD_NAME'),
                   api_key=env("CLOUDINARY_API_KEY"),
                   api_secret=env("CLOUDINARY_API_SECRET"),)
+CORS_ALLOW_ALL_ORIGINS = True
