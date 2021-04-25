@@ -4,7 +4,7 @@ import { ClockLoader } from "react-spinners";
 
 import ShowImages from "../ShowImages";
 const axios = require("axios");
-
+const baseURL = "http://localhost:8000";
 class ImageUpload extends Component {
   constructor(props) {
     super(props);
@@ -24,7 +24,7 @@ class ImageUpload extends Component {
     data.append("picture", files[0]);
     axios({
       method: "post",
-      url: "https://imagetosketch.herokuapp.com/api/sketch/",
+      url: `${baseURL}/api/sketch/`,
       headers: {
         "Content-Type": "multipart/form-data",
       },
