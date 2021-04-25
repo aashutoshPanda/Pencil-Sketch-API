@@ -24,7 +24,7 @@ class ImageUpload extends Component {
     data.append("picture", files[0]);
     axios({
       method: "post",
-      url: "https://imagetosketch.herokuapp.com/api/sketch/",
+      url: "http://localhost:8000/api/sketch/",
       headers: {
         "Content-Type": "multipart/form-data",
       },
