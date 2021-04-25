@@ -18,7 +18,10 @@
 #### Run React  app
 
 - `npm start`
-
+- 
+#### Env Vars Setup
+- rename .env.example to .env
+- get your keys from cloudinary https://cloudinary.com/documentation/how_to_integrate_cloudinary
 #### Run Django Rest backend
 
 - `python manage.py makemigrations`
